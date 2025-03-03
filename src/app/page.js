@@ -17,7 +17,7 @@ export default function Home() {
 
             <div className="svg-wrapper">
                 <a
-                    href="http://wa.me/5545988085688?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento"
+                    href="http://wa.me/5545999309809?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

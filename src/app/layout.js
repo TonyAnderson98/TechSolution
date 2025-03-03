@@ -35,9 +35,9 @@ function Footer() {
             <div className="footer-container">
                 <p>© 2025 TechSolution - Todos os direitos reservados</p>
                 <div className="footer-contact">
-                    <p>Entre em contato: (45) 98808-5688</p>
+                    <p>Entre em contato: (45) 9 99930-9809</p>
                     <a
-                        href="http://wa.me/5545988085688"
+                        href="http://wa.me/5545999309809?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="whatsapp-link"

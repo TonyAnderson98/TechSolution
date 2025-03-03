@@ -32,7 +32,7 @@ export default function ReparoDeHardware() {
                             </ul>
                         </div>
                         <a
-                            href="http://wa.me/5545988085688?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento%20para%20reparo%20de%20hardware"
+                            href="http://wa.me/5545999309809?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento%20para%20reparo%20de%20hardware"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="contact-button"
