@@ -729,3 +729,48 @@ p {
         height: auto;
     }
 }
+
+/* globals.css */
+
+/* Estilo do botão nos cards */
+.card-button {
+    display: block;
+    margin: 0.75rem auto 0; /* Centraliza e adiciona margem superior */
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--cyan-3);
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: var(--cyan-3);
+    color: var(--gray-9);
+    border-color: var(--cyan-5);
+}
+
+/* Ajuste no card para suportar o botão */
+.card--service__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Garantir que o link do card não interfira no botão */
+.card-link {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.card-link:hover {
+    transform: scale(1.02);
+}
+
+.card-link .card--service {
+    cursor: pointer;
+}

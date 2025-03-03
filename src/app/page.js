@@ -90,6 +90,9 @@ export default function Home() {
                                         celulares e notebooks com peças de
                                         qualidade e garantia de serviço.
                                     </p>
+                                    <button className="card-button">
+                                        Clique e Saiba Mais
+                                    </button>
                                 </div>
                             </div>
                         </a>
@@ -112,6 +115,9 @@ export default function Home() {
                                         componentes de computadores e laptops
                                         com precisão.
                                     </p>
+                                    <button className="card-button">
+                                        Clique e Saiba Mais
+                                    </button>
                                 </div>
                             </div>
                         </a>
@@ -136,6 +142,9 @@ export default function Home() {
                                         e falhas de sistema em computadores e
                                         celulares.
                                     </p>
+                                    <button className="card-button">
+                                        Clique e Saiba Mais
+                                    </button>
                                 </div>
                             </div>
                         </a>
@@ -158,6 +167,9 @@ export default function Home() {
                                         SSDs e celulares com segurança e
                                         eficiência.
                                     </p>
+                                    <button className="card-button">
+                                        Clique e Saiba Mais
+                                    </button>
                                 </div>
                             </div>
                         </a>
