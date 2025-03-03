@@ -1,3 +1,5 @@
+// src/app/page.js
+
 import Image from "next/image";
 import "./glitch.css";
 
@@ -11,23 +13,31 @@ export default function Home() {
                     <span style={{ "--index": 2 }}>Tech Solution</span>
                 </div>
             </div>
-
-            {/* <h1>TechSolution</h1> */}
             <h3>Sua satisfação é nossa prioridade!</h3>
 
             <div className="svg-wrapper">
-                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                    <rect className="shape" height="60" width="320" />
-                    <text
-                        x="160"
-                        y="35"
-                        textAnchor="middle"
-                        alignmentBaseline="middle"
-                        className="text"
+                <a
+                    href="http://wa.me/5545988085688?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <svg
+                        height="60"
+                        width="320"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
-                        FALE CONOSCO
-                    </text>
-                </svg>
+                        <rect className="shape" height="60" width="320" />
+                        <text
+                            x="160"
+                            y="35"
+                            textAnchor="middle"
+                            alignmentBaseline="middle"
+                            className="text"
+                        >
+                            FALE CONOSCO
+                        </text>
+                    </svg>
+                </a>
             </div>
 
             <div className="main--container">
@@ -61,93 +71,101 @@ export default function Home() {
                 </div>
                 <div className="right--side">
                     <div className="column">
-                        <div className="card--service">
-                            <div className="card--service__image">
-                                <Image
-                                    src={"/icons/garantia.svg"}
-                                    width={64}
-                                    height={64}
-                                    alt=""
-                                />
+                        <a href="/troca-de-tela" className="card-link">
+                            <div className="card--service">
+                                <div className="card--service__image">
+                                    <Image
+                                        src={"/icons/garantia.svg"}
+                                        width={64}
+                                        height={64}
+                                        alt="Troca de tela"
+                                    />
+                                </div>
+                                <div className="card--service__title">
+                                    <h5>Troca de Tela</h5>
+                                </div>
+                                <div className="card--service__body">
+                                    <p>
+                                        Substituímos telas quebradas de
+                                        celulares e notebooks com peças de
+                                        qualidade e garantia de serviço.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="card--service__title">
-                                <h5>Orçamento Grátis</h5>
+                        </a>
+                        <a href="/reparo-de-hardware" className="card-link">
+                            <div className="card--service">
+                                <div className="card--service__image">
+                                    <Image
+                                        src={"/icons/garantia.svg"}
+                                        width={64}
+                                        height={64}
+                                        alt="Reparo de hardware"
+                                    />
+                                </div>
+                                <div className="card--service__title">
+                                    <h5>Reparo de Hardware</h5>
+                                </div>
+                                <div className="card--service__body">
+                                    <p>
+                                        Consertamos placas-mãe, fontes e outros
+                                        componentes de computadores e laptops
+                                        com precisão.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="card--service__body">
-                                <p>
-                                    Realizamos o diagnóstico e orçamento
-                                    gratuito para que você saiba exatamente o
-                                    que precisa antes de decidir.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="card--service">
-                            <div className="card--service__image">
-                                <Image
-                                    src={"/icons/garantia.svg"}
-                                    width={64}
-                                    height={64}
-                                    alt=""
-                                />
-                            </div>
-                            <div className="card--service__title">
-                                <h5>Garantia</h5>
-                            </div>
-                            <div className="card--service__body">
-                                <p>
-                                    Realizamos o diagnóstico e orçamento
-                                    gratuito para que você saiba exatamente o
-                                    que precisa antes de decidir.
-                                </p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div className="column">
-                        <div className="card--service">
-                            <div className="card--service__image">
-                                <Image
-                                    src={"/icons/garantia.svg"}
-                                    width={64}
-                                    height={64}
-                                    alt=""
-                                />
+                        <a href="/manutencao-de-software" className="card-link">
+                            <div className="card--service">
+                                <div className="card--service__image">
+                                    <Image
+                                        src={"/icons/garantia.svg"}
+                                        width={64}
+                                        height={64}
+                                        alt="Manutenção de software"
+                                    />
+                                </div>
+                                <div className="card--service__title">
+                                    <h5>Manutenção de Software</h5>
+                                </div>
+                                <div className="card--service__body">
+                                    <p>
+                                        Resolvemos problemas de lentidão, vírus
+                                        e falhas de sistema em computadores e
+                                        celulares.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="card--service__title">
-                                <h5>Agiliade</h5>
+                        </a>
+                        <a href="/recuperacao-de-dados" className="card-link">
+                            <div className="card--service">
+                                <div className="card--service__image">
+                                    <Image
+                                        src={"/icons/garantia.svg"}
+                                        width={64}
+                                        height={64}
+                                        alt="Recuperação de dados"
+                                    />
+                                </div>
+                                <div className="card--service__title">
+                                    <h5>Recuperação de Dados</h5>
+                                </div>
+                                <div className="card--service__body">
+                                    <p>
+                                        Recuperamos arquivos perdidos de HDs,
+                                        SSDs e celulares com segurança e
+                                        eficiência.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="card--service__body">
-                                <p>
-                                    Realizamos o diagnóstico e orçamento
-                                    gratuito para que você saiba exatamente o
-                                    que precisa antes de decidir.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="card--service">
-                            <div className="card--service__image">
-                                <Image
-                                    src={"/icons/garantia.svg"}
-                                    width={64}
-                                    height={64}
-                                    alt=""
-                                />
-                            </div>
-                            <div className="card--service__title">
-                                <h5>Qualidade</h5>
-                            </div>
-                            <div className="card--service__body">
-                                <p>
-                                    Realizamos o diagnóstico e orçamento
-                                    gratuito para que você saiba exatamente o
-                                    que precisa antes de decidir.
-                                </p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <h2>Nossos Serviços</h2>
+            <h2 id="services">Nossos Serviços</h2>
             <div className="our--services--container">
                 <div className="our--services__row">
                     <div className="our--services__card">
@@ -155,7 +173,7 @@ export default function Home() {
                             src={"/icons/leva-traz.png"}
                             width={300}
                             height={300}
-                            alt=""
+                            alt="Serviço de Leva e Traz"
                         />
                         <span className="our--service__title">
                             Leva e Traz:
@@ -164,85 +182,90 @@ export default function Home() {
                             Mais Comodidade para Você!
                         </span>
                         <p>
-                            A vida anda corrida? Não se preocupe! Oferecemos o
-                            serviço de leva e traz para sua maior comodidade.
+                            Facilitamos seu dia a dia com nosso serviço de leva
+                            e traz. Buscamos seu celular ou computador onde você
+                            estiver.
                         </p>
                         <p>
+                            Após o reparo,{" "}
                             <span className="bold white">
-                                Buscamos seu aparelho
+                                entregamos seu dispositivo
                             </span>{" "}
-                            no seu endereço e{" "}
-                            <span className="bold white">
-                                entregamos pronto para uso
-                            </span>
-                            . Rápido, fácil e prático!
+                            funcionando perfeitamente, sem que você precise sair
+                            de casa!
                         </p>
                     </div>
                     <div className="our--services__card">
                         <span className="our--service__title">
-                            Formate, Atualize ou Restaure Seu Sistema!
+                            Reparo de Bateria
                         </span>
-                        <span className="our--service__subtitle">.......</span>
+                        <span className="our--service__subtitle">
+                            Energia renovada!
+                        </span>
                         <p>
-                            Oferecemos formatação e instalação de Windows e
-                            Linux, garantindo uma experiência de uso rápida e
-                            segura, sem complicações.
+                            Trocamos baterias de celulares e notebooks que não
+                            seguram mais carga.
                         </p>
                         <Image
                             src={"/icons/leva-traz.png"}
                             width={300}
                             height={300}
-                            alt=""
+                            alt="Reparo de Bateria"
                         />
+                        <p>
+                            Usamos{" "}
+                            <span className="bold white">
+                                baterias de alta qualidade
+                            </span>{" "}
+                            para garantir maior autonomia ao seu dispositivo.
+                        </p>
                     </div>
                 </div>
                 <div className="our--services__row">
                     <div className="our--services__card">
                         <span className="our--services--title-2">
-                            Montagem de Computadores
+                            Upgrade de Computadores
                         </span>
                         <Image
                             src={"/icons/pc-gamer.svg"}
                             width={300}
                             height={300}
-                            alt=""
+                            alt="Upgrade de Computadores"
                         />
                         <p>
-                            Quer um PC sob medida? Montamos máquinas ideais para
-                            jogos, trabalho profissional ou uso cotidiano, tudo
-                            com componentes de alta qualidade.
+                            Aumentamos o desempenho do seu PC com instalação de
+                            SSDs, mais memória RAM ou placas de vídeo modernas.
                         </p>
                     </div>
                     <div className="our--services__card">
                         <span className="our--services--title-2">
-                            Montagem de Computadores
+                            Conserto de Conectores
                         </span>
                         <Image
                             src={"/icons/pc-gamer.svg"}
                             width={300}
                             height={300}
-                            alt=""
+                            alt="Conserto de Conectores"
                         />
                         <p>
-                            Quer um PC sob medida? Montamos máquinas ideais para
-                            jogos, trabalho profissional ou uso cotidiano, tudo
-                            com componentes de alta qualidade.
+                            Reparamos conectores de carga de celulares e portas
+                            USB de laptops que não funcionam mais.
                         </p>
                     </div>
                     <div className="our--services__card">
                         <span className="our--services--title-2">
-                            Montagem de Computadores
+                            Limpeza e Manutenção
                         </span>
                         <Image
                             src={"/icons/pc-gamer.svg"}
                             width={300}
                             height={300}
-                            alt=""
+                            alt="Limpeza e Manutenção"
                         />
                         <p>
-                            Quer um PC sob medida? Montamos máquinas ideais para
-                            jogos, trabalho profissional ou uso cotidiano, tudo
-                            com componentes de alta qualidade.
+                            Realizamos limpeza interna de computadores e
+                            celulares para evitar superaquecimento e prolongar a
+                            vida útil.
                         </p>
                     </div>
                 </div>
